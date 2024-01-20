@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wawa</title><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extenso</title>
+    <link rel="stylesheet" href="{%static 'css/base.css'}">
+    </head>
+    <body>
+
+
+
+
+<header>
+    <div class="nav-left">
+        <h1><a href="{% url 'home' %}">My blog</a></h1>
+    </div>
+    <div class="nav-right">
+        <h1><a href="{% url 'post_new' %}">+ New post</a></h1>
+    </div>
+</header>
+
+{% block content %}
+
+{% endblock content %}
+
+        <footer>
+            <a href="mailto:peladio98@gmail.com">contactame!</a>
+        </footer>
+    </body>
+</html>
